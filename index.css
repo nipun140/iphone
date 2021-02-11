@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  width: 31vw;
+  height: 70vw;
+  border-radius: 6.2vw;
+  margin: 100px auto;
+  background-color: #606060;
+  box-shadow: -20px 20px 45px 0px rgba(0, 0, 0, 30%);
+  position: relative;
+}
+
+.control {
+  position: absolute;
+  z-index: 2;
+  background-color: #000000;
+  border-radius: 4.8px 0px 0px 4.8px;
+  width: 2.5%;
+  right: 99%;
+}
+
+.control.switch {
+  height: 5%;
+  top: 13%;
+}
+
+.control.volUp {
+  height: 8%;
+  top: 20%;
+}
+.control.volDown {
+  height: 8%;
+  top: 29%;
+}
+
+.innerBody {
+  position: absolute;
+  z-index: 1;
+  width: 99%;
+  background: linear-gradient(0deg, #defc04, #fe9503);
+  height: 99%;
+  border-radius: 6.5vw;
+  box-shadow: inset 0px 0px 0px 0.8vw black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.innerBody .topNotch {
+  width: 46%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0px;
+  height: 4.5%;
+  border-radius: 0px 0px 1.2vw 1.2vw;
+  background-color: #000000;
+}
+
+@media (max-width: 600px) {
+  .body {
+    width: 38vw;
+    height: 83vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .body {
+    width: 42vw;
+    height: 90vw;
+  }
+}
